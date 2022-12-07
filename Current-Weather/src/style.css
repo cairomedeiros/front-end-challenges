@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.geral{
+    background-color: #ffa500;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    
+}
+
+.container{
+    position: fixed;
+    
+    height: 50vh;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 1px solid #eee;
+    
+}
+
+.titulo{
+    font-size: 25px;
+    color: white;
+    
+}
+
+
+input{
+    
+    width: 400px;
+    height: 40px;
+    border: none;
+    position: block;
+    
+}
+
+.formulario{
+    background-color: green;
+    margin-top: 100px;
+}
+
+
+button{
+    height: 40px;
+    width: 40px;
+    background-color: #eee;
+    border: none;
+    cursor: pointer;
+}
+
+.weatherReport{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: white;
+    width: 440px;
+    height: 200px;
+    margin-bottom: -80px;
+}
+
+.capitais{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 50%;
+    height: 50vh;
+    margin-top: 328px;
+    position: fixed;
+
+    
+    
+}
+
+.capitalHeader{
+    width: 100%;
+    height: 30px;
+    background-color: blue;
+}
+
+.capitais li {
+    text-decoration: none;
+    list-style: none;
+    padding: 10px;
+    font-size: 17px;
+    color: rgb(45, 45, 46);
+}
+
+.fiveFirst{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-left: 70px;
+}
+.fiveLast{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 50px;
+    margin-left: 70px;
+
+
+}
+
+.capitaisHeader{
+    font-size: 35px;
+    color: white;
+    margin-left: 10px;
+    margin-top: -10px;
+    height: 60px;
+}
+
+.minMax{
+    padding-left: 11px;
+    font-size: 15px;
+    color: rgb(94, 92, 92);
+}

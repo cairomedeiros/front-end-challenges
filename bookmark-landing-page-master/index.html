@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles/style.css">
   
   <title>Frontend Mentor | Bookmark landing page</title>
 
@@ -15,9 +16,27 @@
   </style>
 </head>
 <body>
-  <header>
-    <nav class="nav">
+  <header class="l-header">
+    <nav class="nav bd-grid">
+      <div class="nav__toggle" id="nav-toggle">
+        <img src="./images/icon-hamburger.svg" alt="">
+      </div>
 
+      <div class="nav__logo">
+        <img src="./images/logo-bookmark.svg" alt="">
+      </div>
+
+      <div class="nav__menu" id="nav-menu">
+        <div class="nav__close" id="nav-close">
+          <img src="./images/icon-close.svg" alt="">
+        </div>
+
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#features" class="nav__link active">Features</a></li>
+          <li class="nav__item"><a href="#pricing" class="nav__link active">Pricing</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link active">Contact</a></li>
+        </ul>
+      </div>
     </nav>
   </header>
 
@@ -29,5 +48,7 @@
       Coded by <a href="#">Cairo</a>.
     </p>
   </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>

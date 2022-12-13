@@ -1,12 +1,98 @@
+/*GOOGLE FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+
+/*VARIABLES CSS*/
+:root {
+    /*FONT WEIGTH*/
+    --font-regular: 500;
+    --font-medium: 500;
+
+    /*COLORS*/
+    --soft-blue: hsl(231, 69%, 60%);
+    --soft-red: hsl(0, 94%, 66%);
+    --gryish-blue: hsl(229, 8%, 60%);
+    --very-dark-blue: hsl(229, 31%, 21%);
+
+    /*FONT AND TYPOGRAPHY*/
+    --body-font: 'Rubik', sans-serif;
+}
+
 /*RESET*/
-html{
+*{
+    box-sizing: border-box;
+}
+html {
     scroll-behavior: smooth;
 }
 
-body{
+body {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
 }
 
-/*HEADER*/
+h1,h2,h3,p{
+    margin: 0;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*LAYOUT*/
+.bd-grid{
+    max-width: 1440px;
+    display: grid;
+    grid-template-columns: 100%;
+    background-color: green;
+}
+
+.l-header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/*NAV*/
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__menu{
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 90%;
+    height: 100vh;
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    background-color: var(--very-dark-blue);
+    transition: .5s;
+}
+
+.nav__close{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+    background-color: green;
+}
+
+.nav__toggle{
+    cursor: pointer;
+}
+
+/*SHOW*/
+.show{
+    left: 0;
+}

@@ -49,7 +49,6 @@ a{
     max-width: 1440px;
     display: grid;
     grid-template-columns: 100%;
-    background-color: green;
 }
 
 .l-header{
@@ -64,18 +63,21 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: row-reverse;
 }
 
 .nav__menu{
     position: fixed;
-    top: 0;
-    left: -100%;
-    width: 90%;
+    top: -100%;
+    width: 100%;
     height: 100vh;
     padding: 3rem;
     display: flex;
     align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
     background-color: var(--very-dark-blue);
+    opacity: 98%;
     transition: .5s;
 }
 
@@ -85,14 +87,30 @@ a{
     right: 1rem;
     font-size: 2rem;
     cursor: pointer;
-    background-color: green;
 }
 
 .nav__toggle{
     cursor: pointer;
 }
 
+.nav__list:nth-child(2){
+    border-top: 1px solid #FFFFFF;
+}
+
+.nav__item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom:1px solid #FFFFFF;
+    width: 300px;
+    height: 50px;
+}
+
+.nav__item a{
+    color: #FFFFFF;
+}
+
 /*SHOW*/
 .show{
-    left: 0;
+    top: 0;
 }
